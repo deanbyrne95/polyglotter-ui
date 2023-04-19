@@ -5,14 +5,24 @@ import Logo from "../assets/polyglotter10x.png";
 const Login = () => {
   return (
     <section className="h-screen">
-      <div className="container h-full px-6 py-24">
-        <div className="flex h-full flex-wrap items-center justify-center lg:justify-between">
-          <div className="mb-12 md:mb-0 md:w-8/12 lg:w-6/12">
-            <img src={Logo} class="w-full" alt="Polyglotter Logo" />
+      <div className="pt-12 flex flex-wrap justify-center items-center">
+        <div className="sm:w-1/2">
+          <div className="px-5">
+            <img src={Logo} className="min-w-[60%]" alt="Polyglotter Logo" />
           </div>
         </div>
-        <div className="md:w-8/12 lg:ml-6 lg:w-5/12">
-            <form></form>
+        <div className="sm:w-1/4 lg:w-1/3 w-1/2">
+          <form>
+          <div className="mb-3">
+                <label for="email" className="text-sm text-secondary dark:text-white font-bold">Email</label>
+                <input type="text" id="email" placeholder="coolExplorer@email.com" className="text-primary mt-2 flex h-12 w-full items-center justify-center rounded-xl border bg-white/0 p-3 text-sm outline-none border-primary" />
+            </div>
+            <div className="mb-3">
+                <label for="password" className="text-sm text-secondary dark:text-white font-bold">Password</label>
+                <input type="text" id="password" placeholder="XXRockstar89!" className="text-primary mt-2 flex h-12 w-full items-center justify-center rounded-xl border bg-white/0 p-3 text-sm outline-none border-primary" />
+            </div>
+            <button className="w-full mt-4 py-2 px-4 bg-transparent text-tertiary font-semibold border border-secondary rounded hover:bg-secondary hover:text-white hover:border-transparent transition ease-in duration-200 transform hover:-translate-y-1 active:translate-y-0">Login</button>
+          </form>
         </div>
       </div>
     </section>
