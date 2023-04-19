@@ -6,18 +6,18 @@ import Logo from "../assets/polyglotter10x.png";
 const Login = () => {
   return (
     <section className="min-h-screen">
-      <div className="pt-0 md:pt-20 flex flex-wrap justify-center items-center">
+      <div className="pt-0 md:pt-5 flex flex-wrap justify-center items-center">
         <div className="md:w-1/2">
-          <div className="flex flex-col justify-center items-center mb-6 sm:mb-0">
+          <div className="flex flex-col justify-center items-center mb-0 sm:mb-0">
             <img
               src={Logo}
-              className="sm:w-full w-[60%] drop-shadow-lg"
+              className="sm:w-full w-[80%] drop-shadow-lg"
               alt="Polyglotter Logo"
             />
           </div>
         </div>
         <div className="md:w-1/4 lg:w-1/3 w-[60%] mb-8">
-          <p className="text-md sm:text-xl pb-10 font-black flex text-white justify-center items-center drop-shadow-md">
+          <p className="text-[10px] sm:text-lg pb-5 font-black tracking-widest flex text-white justify-center items-center drop-shadow-md">
             We eliminate language barriers
           </p>
           <div className="rounded-xl bg-white bg-opacity-10 drop-shadow-md">
@@ -54,16 +54,21 @@ const Login = () => {
                 Login
               </button>
             </form>
+            <div className="my-4 flex items-center before:mt-0.5 before:flex-1 before:border-t before:border-neutral-300 after:mt-0.5 after:flex-1 after:border-t after:border-neutral-300">
+              <p className="mx-4 mb-0 text-center font-semibold text-primary">
+                OR
+              </p>
+            </div>
+            <p className="text-sm sm:text-md flex text-white justify-center items-center drop-shadow-md">
+              Don't have an account?
+            </p>
+            <Link
+              className="text-lg pb-5 font-black sm:text-md flex text-tertiary justify-center items-center drop-shadow-md hover:text-primary hover:border-transparent transition ease-in duration-200 transform hover:-translate-y-1 active:translate-y-0"
+              to="/register"
+            >
+              Join us
+            </Link>
           </div>
-          <p className="text-sm pt-4 sm:text-md flex text-white justify-center items-center drop-shadow-md">
-            Don't have an account?
-          </p>
-          <Link
-            className="text-lg font-black sm:text-md flex text-tertiary justify-center items-center drop-shadow-md hover:text-primary hover:border-transparent transition ease-in duration-200 transform hover:-translate-y-1 active:translate-y-0"
-            to="/register"
-          >
-            Join us
-          </Link>
         </div>
       </div>
     </section>

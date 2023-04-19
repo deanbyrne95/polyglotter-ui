@@ -12,7 +12,7 @@ const PageNotFound = () => {
           </div>
         </div>
         <div className="sm:w-1/4 lg:w-1/3 w-1/2">
-          <h2>Error 404, Can't seem to find the page </h2>
+          <h2 className="text-[12px] sm:text-lg pb-5 font-black flex text-white justify-center items-center drop-shadow-md">Error 404, Can't seem to find the page </h2>
         </div>
       </div>
     </section>
