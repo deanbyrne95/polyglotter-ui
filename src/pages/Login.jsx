@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import Logo from "../assets/polyglotter10x.png";
 
@@ -15,7 +16,7 @@ const Login = () => {
             />
           </div>
         </div>
-        <div className="md:w-1/4 lg:w-1/3 w-[60%] mb-12">
+        <div className="md:w-1/4 lg:w-1/3 w-[60%] mb-8">
           <p className="text-md sm:text-xl pb-10 font-black flex text-white justify-center items-center drop-shadow-md">
             We eliminate language barriers
           </p>
@@ -54,6 +55,15 @@ const Login = () => {
               </button>
             </form>
           </div>
+          <p className="text-sm pt-4 sm:text-md flex text-white justify-center items-center drop-shadow-md">
+            Don't have an account?
+          </p>
+          <Link
+            className="text-lg font-black sm:text-md flex text-tertiary justify-center items-center drop-shadow-md hover:text-primary hover:border-transparent transition ease-in duration-200 transform hover:-translate-y-1 active:translate-y-0"
+            to="/register"
+          >
+            Join us
+          </Link>
         </div>
       </div>
     </section>
