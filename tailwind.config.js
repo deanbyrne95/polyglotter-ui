@@ -4,12 +4,10 @@ export default {
   mode: "jit",
   theme: {
     extend: {
-      extend: {
-        colors: {
-          primary: "#333333",
-          secondary: "#EC1C24",
-          tertiary: "#1B75BB",
-        },
+      colors: {
+        primary: "#333333",
+        secondary: "#EC1C24",
+        tertiary: "#1B75BB",
       },
     },
   },
