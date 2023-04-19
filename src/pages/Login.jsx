@@ -5,8 +5,8 @@ import Logo from "../assets/polyglotter10x.png";
 const Login = () => {
   return (
     <section className="min-h-screen">
-      <div className="pt-0 sm:pt-20 flex flex-wrap justify-center items-center">
-        <div className="sm:w-1/2">
+      <div className="pt-0 md:pt-20 flex flex-wrap justify-center items-center">
+        <div className="md:w-1/2">
           <div className="flex flex-col justify-center items-center mb-6 sm:mb-0">
             <img
               src={Logo}
@@ -15,7 +15,7 @@ const Login = () => {
             />
           </div>
         </div>
-        <div className="sm:w-1/4 lg:w-1/3 w-[60%] mb-12">
+        <div className="md:w-1/4 lg:w-1/3 w-[60%] mb-12">
           <p className="text-md sm:text-xl pb-10 font-black flex text-white justify-center items-center drop-shadow-md">
             We eliminate language barriers
           </p>
