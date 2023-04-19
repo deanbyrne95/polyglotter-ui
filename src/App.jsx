@@ -28,7 +28,9 @@ const router = createBrowserRouter([
 const App = () => {
   return (
     <main>
-      <RouterProvider router={router}></RouterProvider>
+      <div className="relative w-full h-[100%] mx-auto bg-gradient-to-br from-tertiary to-secondary">
+        <RouterProvider router={router}></RouterProvider>
+      </div>
       <div className="bg-primary bottom-[0px] fixed min-w-full">
         <Footer />
       </div>
