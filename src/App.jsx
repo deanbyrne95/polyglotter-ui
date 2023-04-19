@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
 import PageNotFound from "./pages/PageNotFound";
+import Footer from "./components/Footer";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,9 @@ const App = () => {
   return (
     <main>
       <RouterProvider router={router}></RouterProvider>
+      <div className="bg-primary bottom-[0px] fixed min-w-full">
+        <Footer />
+      </div>
     </main>
   );
 };
